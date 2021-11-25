@@ -37,6 +37,8 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
+      with:
+        add-snippets: true
 
 #    - name: Upload loc as a Build Artifact
 #      uses: actions/upload-artifact@v2.2.0
